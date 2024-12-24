@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define M 50
+struct student {
+    int studId;
+    char studNames[M];
+    char studDepart[M];
+    char studFaculty[M];
+};
+
+int main(int argc, char *argv[]) {
+    struct student St;
+    	printf("Enter student ID: ");
+    		scanf("%d", &St.studId);
+   		 printf("Enter student Name: ");
+    		scanf("%s", St.studNames);
+    	printf("Enter student department: ");
+    		scanf("%s", &St.studDepart);
+    	printf("Enter student Faculty: ");
+   			 scanf("%s", &St.studFaculty);
+   		 printf("\nStusent Details:\n");
+    	 printf("ID: %d\n", St.studId);
+    	printf("Student Name: %s\n", St.studNames);
+    	printf("Student Department: %s\n", St.studDepart);
+    	printf("Student Facultyy: %s\n", St.studFaculty);
+	return 0;
+}
